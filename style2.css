@@ -1,11 +1,14 @@
 
 
 html,body{
+  margin: 0;
   height: 100%;
   width: 100%;
   display: block;
   color: #FFF;
   -webkit-font-smoothing: antialiased;
+  padding: 0;
+
 
 }
 
@@ -24,6 +27,8 @@ header {
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
+
+
   /*-webkit-filter: blur(5px); /* Safari 6.0 - 9.0 */
     /*filter: blur(5px);*/
     z-index: -1;
@@ -172,10 +177,21 @@ img{
   height:auto;
 }
 
+
+
+
+.row {
+    padding-bottom: 10px;
+}
+
+
 .logo{
   width:5%;
   height:auto;
 }
+
+
+
 
 .card-img-top{
   width:100%;
@@ -338,13 +354,13 @@ ul.social-icons {
 
 .skills {
     text-align: right; /* Right-align text */
-    padding-right: 20px; /* Add some right padding */
+    padding-right: 10px; /* Add some right padding */
     line-height: 20px; /* Set the line-height to center the text inside the skill bar, and to expand the height of the container */
     color: white; /* White text color */
 }
 
-
-.ruby {width: 70%; background-color:  #8B0000 ;} /* Dark Red */
+.rails {width: 70%; background-color:   #8B0000 ;} /*  Dark Red */
+.ruby {width: 65%; background-color:   #cc3333 ;} /*  Red */
 .html {width: 60%; background-color: #FF6347;} /*Orange Tomato*/
 .css {width: 50%; background-color: #2196F3;} /* Blue */
 .js {width: 40%; background-color: #4CAF50;} /*Green*/ /* Dark Grey 808080 */
