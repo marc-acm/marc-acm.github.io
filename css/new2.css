@@ -1,0 +1,364 @@
+
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+
+
+body {
+    text-align: center;
+    width: 100%;
+    height: auto;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    padding: 0;
+}
+
+.row {
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #434343;
+}
+
+.line {
+    margin: 0 0 30px 0;
+}
+
+.fancy {
+    overflow: hidden;
+    text-align: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #434343;
+}
+
+.fancy span {
+    position: relative;
+}
+
+.fancy span:before,
+.fancy span:after {
+    content: "";
+    position: absolute;
+    border-bottom: 1px solid #434343;
+    border-top: 1px solid #A7A7A7;
+    width: 200px;
+    top: 50%;
+}
+
+.fancy span:before {
+    right: 100%;
+    margin-right: 15px;
+}
+
+.fancy span:after {
+    left: 100%;
+    margin-left: 15px;
+}
+
+header {
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    padding-bottom: 420px;
+
+}
+
+/* SHADOW ON THE EDGE ON EACH PAGE */
+header,
+.intro,
+.footer {
+    -webkit-box-shadow: inset 0px 0px 20px 0px rgba(0,0,0,2);
+    -moz-box-shadow: inset 0px 0px 20px 0px rgba(0,0,0,2);
+    box-shadow: inset 0px 0px 20px 0px rgba(0,0,0,2);
+}
+
+
+/* NAVIGATION BAR */
+
+.navbar {
+    background: #B2BFBF;
+    border: none;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.6em;
+
+}
+
+#navbarCollapse {
+    border-color: transparent;
+}
+
+#navbarCollapse li a {
+    color: #434343;
+    background: transparent;
+    border-radius: 5px;
+    padding: 20px 30px 10px 30px;
+    border-bottom: 3px solid transparent;
+    transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+}
+
+#navbarCollapse li a:hover {
+    border-bottom: 3px solid #78C68E;
+    border-radius: 0;
+}
+
+.navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+    vertical-align: top;
+}
+
+.navbar-default .navbar-toggle {
+    margin-right: 30px;
+    border: 1px solid #899696;
+}
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:active, .navbar-default .navbar-toggle:visited {
+    background: #C5B1CC;
+}
+
+.container .navbar-header {
+    margin: auto;
+}
+
+@media (max-width: 768px) {
+    #navbarCollapse, #navbarCollapse li a, .navbar, .navbar-header {
+        background-color: #434343;
+        color: #A7A7A7;
+    }
+}
+
+
+/* FRONT PAGE */
+
+
+
+.front {
+    padding-top: 50px;
+    padding-bottom: 150px;
+}
+
+.front h1 {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    font-size: 6em;
+    color: #434343;
+}
+
+.front h4 {
+    font-family: 'Raleway', sans-serif;
+    color: #434343;
+}
+
+
+@media (max-width: 540px) {
+    .front {
+        padding-top: 50px;
+        padding-bottom: 280px;
+    }
+    .front h1 {
+        font-size: 4.2em;
+    }
+}
+
+@media (max-width: 1140px) {
+    .front {
+        padding-top: 50px;
+        padding-bottom: 300px;
+    }
+}
+
+
+/* PORTFOLIO */
+
+.hardwork {
+    background: #C7E0E0;
+    font-family: 'Raleway', sans-serif;
+    padding: 20px;
+}
+
+.hardwork p {
+    font-size: 1.4em;
+}
+
+.hardwork .portfolio-details {
+    margin: 10px auto;
+}
+
+.hardwork .portfolio-details img {
+    border-radius: 10px;
+    height: 200px;
+}
+
+.hardwork .portfolio-details .github-link {
+  display: block;
+  position: relative;
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+
+.hardwork .portfolio-details .github-link .note {
+    background: #C5B1CC;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    opacity: 0;
+    transition: all ease 0.5s;
+    -webkit-transition: all ease 0.5s;
+    -moz-transition: all ease 0.5s;
+}
+
+.hardwork .portfolio-details .github-link .note:hover {
+    opacity: 1;
+}
+
+.hardwork .portfolio-details .github-link .note .note-content {
+    position: absolute;
+    width: 100%;
+    height: 0px;
+    font-size: 20px;
+    text-align: center;
+    margin-top: -12px;
+    top: 50%;
+    color: white;
+}
+
+.hardwork .portfolio-details .github-link .note .note-content i {
+    margin-top: -12px;
+    color: #D6D6D6;
+}
+
+.hardwork .portfolio-details .github-link .note .note-content p {
+  font-size: 14px;
+  margin-top: -36px;
+}
+
+
+
+
+/* About Section */
+
+.intro {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #161616;
+    padding: 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.intro p {
+    margin: 30px auto;
+    padding: 20px;
+    font-size: 1.4em;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+}
+
+#profilepic {
+  margin-top: 10%;
+  width: 80%;
+  height: 80%;
+  border-radius: 10px;
+  border: 1px solid grey;
+}
+
+/* CONTACT */
+
+.last {
+    background: #C7E0E0;
+    padding: 20px;
+}
+
+.last p {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.4em;
+    padding: 20px;
+    margin: 30px auto 30px auto;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+}
+
+.last p a:hover {
+    color: #78C68E;
+}
+
+
+
+.last ul {
+    padding: 0;
+    margin: 30px auto 30px auto;
+}
+
+.last ul li {
+    list-style-type: none;
+    text-align: center;
+    display: inline;
+    padding: 10px;
+}
+
+.last i {
+    font-size: 36px !important;
+    background: #D6D6D6;
+    color: #444444;
+    width: 48px;
+    height: 48px;
+    margin: 20px auto 20px auto;
+    padding: 5px;
+    border-radius: 10px;
+    transition: all 0.2s ease-in-out;
+}
+
+.last i:hover {
+    color: #78C68E;
+    background: #F1F1F1;
+}
+
+
+/* Scroll Top Button */
+
+.go-home a {
+    background: none;
+    margin: 0;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 70px;
+    height: 70px;
+    z-index: 100;
+    text-decoration: none;
+    color: #C5B1CC;
+    text-align: center;
+}
+
+.go-home a i {
+    font-size: 30px;
+    text-align: center;
+}
+
+.footer {
+    text-align: center;
+    background: #434343;
+    color: #A7A7A7;
+    padding: 5px;
+}
+
+@media screen and (max-width: 515px) {
+    .front h1 {
+        font-size: 4.2em;
+    }
+}

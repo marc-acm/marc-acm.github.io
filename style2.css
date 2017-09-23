@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
 
 
 html,body{
@@ -9,13 +12,14 @@ html,body{
   -webkit-font-smoothing: antialiased;
   padding: 0;
 
-
 }
+
+
 
 header {
   height: 100%;
-  overflow: hidden;
 }
+
 
 .bg {
   position: fixed;
@@ -32,6 +36,7 @@ header {
   /*-webkit-filter: blur(5px); /* Safari 6.0 - 9.0 */
     /*filter: blur(5px);*/
     z-index: -1;
+      overflow: hidden;
 }
 
 .bgt {
@@ -51,6 +56,77 @@ header {
     height: 100%;
     color: black;
 }
+
+/* PORTFOLIO */
+
+.full-height {
+  overflow: hidden;
+    padding: 20px;
+}
+
+.full-height p {
+    font-size: 1.4em;
+}
+
+.full-height .col-sm-6 {
+    margin: 10px auto;
+}
+
+.full-height .col-sm-6 img {
+    border-radius: 10px;
+    height: 200px;
+}
+
+.full-height .col-sm-6 .github-link {
+  display: block;
+  position: relative;
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+
+.full-height .col-sm-6 .github-link .note {
+    background: #C5B1CC;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    opacity: 0;
+    transition: all ease 0.5s;
+    -webkit-transition: all ease 0.5s;
+    -moz-transition: all ease 0.5s;
+}
+
+.full-height .col-sm-6 .github-link .note:hover {
+    opacity: 1;
+}
+
+.full-height .col-sm-6 .github-link .note .note-content {
+    position: absolute;
+    width: 100%;
+    height: 0px;
+    font-size: 20px;
+    text-align: center;
+    margin-top: -12px;
+    top: 50%;
+    color: white;
+}
+
+.full-height .col-sm-6 .github-link .note .note-content i {
+    margin-top: -12px;
+    color: #D6D6D6;
+}
+
+.full-height .col-sm-6 .github-link .note .note-content p {
+  font-size: 14px;
+  margin-top: -36px;
+}
+
+
+
+
+
+
 
 /* .parallax {
      The image used
@@ -111,8 +187,8 @@ header {
 }
 
 .display-1 {
-  margin-top: 50px;
-  padding-top: 50px;
+  margin-top: 30px;
+  padding-top: 10px;
   font-size: 3rem;
   text-align: center;
   text-shadow: 2px 2px 4px #000000;
@@ -125,6 +201,21 @@ header {
   text-shadow: 2px 2px 4px #000000;
 }
 
+h4 {
+text-align: center;
+margin-top: 20px;
+padding-top: 70px;
+
+}
+
+h4 i{
+  padding-left: 20px;
+}
+
+h5 {
+text-align: center;
+font-size: 1em;
+}
 
 .learn {
   font-size: 1.5;
@@ -193,10 +284,6 @@ img{
 
 
 
-.card-img-top{
-  width:100%;
-  height:200px;
-}
 
 .col-md-6 {
   text-align: center;
@@ -205,6 +292,47 @@ img{
   font-size: 20px;
   margin-top: 10px;
 }
+
+
+.icon-bootstrap {
+  color: #cdbfe3;
+  border-color: #cdbfe3;
+}
+
+.icon-html5-alt {
+  color: #E34C26;
+  border-color: #E34C26;
+}
+
+.icon-css3-alt {
+  color: #2196F3;
+  border-color: #2196F3;
+}
+
+.icon-ruby {
+  color: #cc3333;
+  border-color: #cc3333;
+}
+
+
+.icon-ruby-on-rails-alt{
+  color: #8B0000;
+  border-color: #8B0000;
+  }
+
+  .icon-jquery{
+    color: #0769ad;
+    border-color: #0769ad;
+    }
+
+
+.icon-javascript{
+  color: #e5bb31;
+  border-color: #e5bb31;
+
+}
+
+
 
 
 @import url(https://fonts.googleapis.com/css?family=Lato);
@@ -236,6 +364,7 @@ ul {
     list-style: none;
 }
 
+
 .footer-social-icons {
     width: 350px;
     display:block;
@@ -244,22 +373,53 @@ ul {
 
 .social-icon {
     color: #fff;
+    padding: 20px;
 }
 
 ul.social-icons {
-    margin-top: 10px;
+  padding: 0;
+  margin: 30px auto 30px auto;
 }
 
 .social-icons li {
-    vertical-align: top;
-    display: inline;
-    height: 100px;
+  list-style-type: none;
+  text-align: center;
+  display: inline;
+  padding: 10px;
 }
 
 .social-icons a {
-    color: #fff;
-    text-decoration: none;
+  font-size: 36px !important;
+  background: ##1868b1;
+  color: #444444;
+  width: 48px;
+  height: 48px;
+  margin: 20px auto 20px auto;
+  padding: 5px;
+  border-radius: 10px;
+  transition: all 0.2s ease-in-out;
 }
+
+
+.social-icons i {
+    font-size: 36px !important;
+    background: #D6D6D6;
+    color: #444444;
+    width: 48px;
+    height: 48px;
+    margin: 20px auto 20px auto;
+    padding: 5px;
+    border-radius: 10px;
+    transition: all 0.2s ease-in-out;
+}
+
+.social-icons i:hover {
+    color: #3148da;
+    background: #171616;
+}
+
+
+
 
 .fa-facebook {
     padding:10px 14px;
